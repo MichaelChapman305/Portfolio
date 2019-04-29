@@ -398,4 +398,29 @@
 						$main._show(location.hash.substr(1), true);
 					});
 
+	$('#next').click(() => {
+		let photoArr = ['./images/slideshow/arizona.jpg', './images/slideshow/camping.jpg', './images/slideshow/devils-bridge.jpg', './images/slideshow/landscape.jpg'];
+
+		let img = $('#slideshowImg').attr('src');
+
+		if (photoArr.indexOf(img) === photoArr.length -1) {
+			$('#slideshowImg').attr('src', photoArr[0]);
+		} else {
+			$('#slideshowImg').attr('src', photoArr[photoArr.indexOf(img) + 1]);
+		}
+	});
+
+	$('#prev').click(() => {
+		let photoArr = ['./images/slideshow/arizona.jpg', './images/slideshow/camping.jpg', './images/slideshow/devils-bridge.jpg', './images/slideshow/landscape.jpg'];
+
+		let img = $('#slideshowImg').attr('src');
+
+		if (photoArr.indexOf(img) === 0) {
+			$('#slideshowImg').attr('src', photoArr[photoArr.length - 1]);
+		} else {
+			$('#slideshowImg').attr('src', photoArr[photoArr.indexOf(img) - 1]);
+		}
+	});
+
 })(jQuery);
+
