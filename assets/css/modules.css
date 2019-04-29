@@ -1329,3 +1329,7 @@ body.is-preload #header {
       opacity: .9;
       cursor: pointer;
     }
+
+    #resume:hover {
+      cursor: pointer;
+    }
