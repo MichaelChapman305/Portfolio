@@ -1297,11 +1297,13 @@ body.is-preload #header {
       width: 100%;
       height: 400px;
       position: relative;
+      border-radius: 4px;
     }
     
     .slideShowContainer img {
       width: 100%;
       height: 100%;
+      border-radius: 4px;
     }
     
     #next, #prev {
@@ -1319,10 +1321,12 @@ body.is-preload #header {
     #next {
       top: 0;
       right: 0;
+      border-radius: 0px 4px 4px 0px;
     }
     
     #prev {
       top: 0;
+      border-radius: 4px 0px 0px 4px;
     }
     
     #next:hover, #prev:hover {
@@ -1332,4 +1336,13 @@ body.is-preload #header {
 
     #resume:hover {
       cursor: pointer;
+    }
+
+    .tech {
+      color: rgba(216, 67, 67, 0.863);
+    }
+
+    .project {
+      font-size: 40px;
+      font-weight: bold;
     }
